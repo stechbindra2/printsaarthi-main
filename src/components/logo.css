@@ -1,0 +1,17 @@
+/* PrintRocket */
+
+.Logo {
+    position: absolute;
+    width: 262px;
+    height: 70px;
+    left: 98px;
+    top: 2395px;
+
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 76px;
+
+    color: #FFFFFF;
+}
