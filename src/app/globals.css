@@ -1,14 +1,245 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+:root {
+  --primary-blue: #2563eb;
+  --primary-blue-dark: #1d4ed8;
+  --primary-blue-light: #3b82f6;
+  --accent-orange: #f97316;
+  --accent-green: #16a34a;
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+}
 
+/* Performance optimizations */
+* {
+  scroll-behavior: smooth;
+}
 
-#logo {
+html {
+  scroll-padding-top: 80px;
+}
 
-    font-family: 'Indie Flower';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 76px;
-    color: #2a2a2a;
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Professional logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 80px; /* Ensure adequate space for larger logo */
+}
+
+.logo-container:hover {
+  transform: scale(1.02);
+}
+
+.logo-container img {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.12));
+  transition: all 0.3s ease;
+  max-height: 80px; /* Prevent logo from being too large */
+}
+
+.logo-container:hover img {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.18));
+}
+
+/* Ensure logo maintains aspect ratio and quality */
+.logo-svg {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Performance optimizations for scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optimized animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Performance: Use transform instead of changing layout properties */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Optimized button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  will-change: transform;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--primary-blue-dark), var(--primary-blue));
+}
+
+/* Optimized text selection */
+::selection {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: var(--primary-blue-dark);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Performance: Reduce paint on scroll */
+.fixed-nav {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Image optimization styles */
+img {
+  content-visibility: auto;
+}
+
+/* Logo specific responsive styles */
+@media (max-width: 640px) {
+  .logo-container {
+    min-height: 60px;
+  }
+  .logo-container img {
+    height: 3rem !important; /* h-12 equivalent for mobile */
+    width: auto;
+    max-height: 48px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .logo-container {
+    min-height: 70px;
+  }
+  .logo-container img {
+    height: 4rem !important; /* h-16 equivalent for tablet */
+    width: auto;
+    max-height: 64px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-container {
+    min-height: 80px;
+  }
+  .logo-container img {
+    height: 5rem !important; /* h-20 equivalent for desktop */
+    width: auto;
+    max-height: 80px;
+  }
+}
+
+/* Navigation height adjustment for larger logo */
+nav {
+  min-height: 80px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    min-height: 70px;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .logo-container:hover {
+    transform: none;
+  }
+}
+
+/* Optimize for mobile devices */
+@media (max-width: 640px) {
+  .animate-float {
+    animation: none;
+  }
+  
+  .card-hover:hover {
+    transform: none;
+  }
+}
+
+/* Container queries for better responsive design */
+@container (min-width: 768px) {
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container (min-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
