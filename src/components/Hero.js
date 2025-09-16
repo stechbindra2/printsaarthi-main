@@ -42,8 +42,8 @@ const Hero = () => {
                         <Image 
                             src={logo} 
                             alt="PrintRocket Logo" 
-                            width={1200} 
-                            height={140}
+                            width={2500} 
+                            height={600}
                             className="h-16 md:h-20 w-auto object-contain transform hover:scale-105 transition-transform duration-300"
                             priority
                         />
