@@ -44,7 +44,7 @@ const Services = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Browse by Category Section */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+                    <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-[#622AD1]/10 to-[#F89816]/10 text-[#622AD1] rounded-full text-sm font-medium mb-6">
                         <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd"/>
                         </svg>
@@ -62,7 +62,7 @@ const Services = () => {
 
                 {/* Our Services Section */}
                 <div className="text-center mt-24 mb-16">
-                    <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6">
+                    <div className="inline-flex items-center px-4 py-2 bg-[#F89816]/10 text-[#F89816] rounded-full text-sm font-medium mb-6">
                         <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                         </svg>
@@ -80,13 +80,13 @@ const Services = () => {
                     {servicesData.slice(0,5).map((service, index) => (
                         <div 
                             key={index} 
-                            className="group bg-white border border-gray-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
+                            className="group bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
                         >
                             <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
                                 <div className="flex flex-col lg:flex-row p-8 items-start">
                                     <div className="flex-1 lg:pr-8 mb-6 lg:mb-0">
                                         <div className="flex items-center mb-6 group-hover:transform group-hover:translate-x-2 transition-transform duration-300">
-                                            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform duration-300">
+                                            <div className="w-16 h-16 bg-gradient-to-r from-[#622AD1] to-[#F89816] rounded-2xl flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform duration-300">
                                                 {serviceIcons[index] || service.icon}
                                             </div>
                                             <div>
@@ -101,10 +101,10 @@ const Services = () => {
                                             {service.services.map((item, i) => (
                                                 <div 
                                                     key={i} 
-                                                    className="flex items-center p-3 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors duration-200 group-hover:bg-blue-50"
+                                                    className="flex items-center p-3 bg-gradient-to-r hover:from-[#622AD1]/10 hover:to-[#F89816]/10 rounded-xl transition-colors duration-200"
                                                 >
-                                                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                                    <span className="text-gray-700 group-hover:text-blue-700 font-medium transition-colors duration-200">
+                                                    <div className="w-2 h-2 bg-[#622AD1] rounded-full mr-3 opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                                    <span className="text-gray-700 group-hover:text-[#622AD1] font-medium transition-colors duration-200">
                                                         {item.name}
                                                     </span>
                                                 </div>
@@ -146,7 +146,7 @@ const Services = () => {
 
                 {/* Call to Action */}
                 <div className="text-center mt-20">
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-r from-[#622AD1] via-[#844CF0] to-[#F89816] rounded-3xl p-12 text-white">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">
                             Ready to Get Started?
                         </h2>
@@ -154,7 +154,7 @@ const Services = () => {
                             Join thousands of satisfied customers who trust PrintRocket for all their printing needs
                         </p>
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                            <button className="inline-flex items-center space-x-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
+                            <button className="inline-flex items-center space-x-3 bg-white text-[#622AD1] px-8 py-4 rounded-xl font-bold hover:bg-gradient-to-r hover:from-[#622AD1]/10 hover:to-[#F89816]/10 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                                 </svg>
