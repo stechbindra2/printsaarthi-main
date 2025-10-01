@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary-blue: #5e17eb;
-  --primary-blue-dark: #4a0fb9;
-  --primary-blue-light: #a077f4;
-  --accent-orange: #f97316;
-  --accent-green: #16a34a;
+  --primary-color: #622ad1;
+  --primary-dark: #4f21aa;
+  --primary-light: #7c4ddb;
+  --secondary-color: #f89816;
+  --secondary-dark: #e08203;
+  --secondary-light: #ffad3c;
   --neutral-50: #f8fafc;
   --neutral-100: #f1f5f9;
   --neutral-800: #1e293b;
@@ -119,7 +120,7 @@ body {
 
 /* Optimized button styles */
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   color: white;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -131,20 +132,20 @@ body {
 }
 
 .btn-primary:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
   transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, var(--primary-blue-dark), var(--primary-blue));
 }
 
 /* Optimized text selection */
 ::selection {
-  background-color: rgba(37, 99, 235, 0.2);
-  color: var(--primary-blue-dark);
+  background-color: rgba(98, 42, 209, 0.2);
+  color: var(--primary-color);
 }
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid var(--primary-blue);
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
   border-radius: 4px;
 }
