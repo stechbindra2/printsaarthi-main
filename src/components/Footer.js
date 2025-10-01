@@ -26,7 +26,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+        <footer className="bg-gradient-to-br from-[#1a1333] via-[#2a1c4d] to-black text-white">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-8 md:px-16 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -119,7 +119,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white mb-1">Email</h4>
-                                    <Link href="mailto:PrintRocket78@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
+                                    <Link href="mailto:PrintRocket@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
                                         PrintRocket@gmail.com
                                     </Link>
                                 </div>
@@ -196,7 +196,7 @@ const Footer = () => {
                         </div>
                         
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                            <button className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <button className="bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] hover:from-[#F89816] hover:to-[#ffad3c] flex items-center space-x-2 text-white px-6 py-3 rounded-xl font-semibold transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                                 </svg>
