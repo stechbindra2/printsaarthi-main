@@ -119,7 +119,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white mb-1">Email</h4>
-                                    <Link href="mailto:PrintRocket@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
+                                    <Link href="mailto:PrintRocket78@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
                                         PrintRocket@gmail.com
                                     </Link>
                                 </div>
