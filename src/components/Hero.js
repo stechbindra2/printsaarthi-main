@@ -34,7 +34,7 @@ const Hero = () => {
     }, []);
 
   return (
-        <div className='relative min-h-screen w-full bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-hidden'>
+        <div className='relative min-h-screen w-full bg-gradient-to-br from-purple-50 via-white to-orange-50 overflow-hidden'>
             {/* Navigation */}
             <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
                 <div className='flex justify-between items-center w-full h-20 px-4 md:px-16'>
@@ -63,7 +63,7 @@ const Hero = () => {
                             </svg>
                         </button>
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                            <button className='flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                            <button className='flex items-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c]'>
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                                 </svg>
@@ -95,7 +95,7 @@ const Hero = () => {
                     {/* Left Content */}
                     <div className='space-y-8'>
                         <div className='space-y-4'>
-                            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                            <div className="inline-flex items-center px-4 py-2 bg-purple-100 text-[#622AD1] rounded-full text-sm font-medium">
                                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"/>
                                 </svg>
@@ -103,7 +103,7 @@ const Hero = () => {
                             </div>
                             <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight'>
                                 Hassle-free{' '}
-                                <span className='bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent'>
+                                <span className='bg-gradient-to-r from-[#622AD1] to-[#4f21aa] bg-clip-text text-transparent'>
                                     prints
                                 </span>
                                 <br />
@@ -123,7 +123,7 @@ const Hero = () => {
 
                         <div className='flex flex-col sm:flex-row gap-4'>
                             <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                                <button className='flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl text-lg'>
+                                <button className='flex items-center justify-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-8 py-4 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl text-lg'>
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd"/>
                                     </svg>
@@ -144,7 +144,7 @@ const Hero = () => {
                                 <div className='text-sm text-gray-600'>Service</div>
                             </div>
                             <div className='text-center'>
-                                <div className='text-2xl font-bold text-gray-900'>Same Day</div>
+                                <div className='text-2xl font-bold text-gray-900'>30min</div>
                                 <div className='text-sm text-gray-600'>Delivery</div>
                             </div>
                         </div>
