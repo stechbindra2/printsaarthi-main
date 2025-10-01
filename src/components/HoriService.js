@@ -18,7 +18,7 @@ const HoriService = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={() => scroll('left')}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/95 hover:bg-white p-3 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden md:flex items-center justify-center"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-r from-[#622AD1]/10 to-[#F89816]/10 hover:from-[#622AD1]/20 hover:to-[#F89816]/20 p-3 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#622AD1] hidden md:flex items-center justify-center"
         aria-label="Scroll left"
       >
         <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -28,7 +28,7 @@ const HoriService = () => {
       
       <button 
         onClick={() => scroll('right')}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/95 hover:bg-white p-3 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden md:flex items-center justify-center"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/95 hover:bg-white p-3 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#622AD1] hidden md:flex items-center justify-center"
         aria-label="Scroll right"
       >
         <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,13 +65,13 @@ const HoriService = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#622AD1]/80 to-[#F89816]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                <div className="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20">
-                  <h2 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">
+                <div className="bg-gradient-to-br from-white/95 to-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20">
+                  <h2 className="text-lg font-bold text-[#622AD1] mb-2 group-hover:text-[#F89816] transition-colors duration-300">
                     {service.category}
                   </h2>
                   <p className="text-sm text-gray-600 mb-3">
@@ -84,7 +84,7 @@ const HoriService = () => {
                       </svg>
                       <span>Fast delivery</span>
                     </div>
-                    <div className="flex items-center space-x-1 text-blue-600 group-hover:translate-x-1 transition-transform duration-300">
+                    <div className="flex items-center space-x-1 text-[#622AD1] group-hover:text-[#F89816] group-hover:translate-x-1 transition-all duration-300">
                       <span className="text-sm font-medium">Order now</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
