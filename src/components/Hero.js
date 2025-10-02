@@ -144,7 +144,7 @@ const Hero = () => {
                                 <div className='text-sm text-gray-600'>Service</div>
                             </div>
                             <div className='text-center'>
-                                <div className='text-2xl font-bold text-gray-900'>30min</div>
+                                <div className='text-2xl font-bold text-gray-900'>Same Day</div>
                                 <div className='text-sm text-gray-600'>Delivery</div>
                             </div>
                         </div>
@@ -182,7 +182,7 @@ const Hero = () => {
                                 </svg>
                             </div>
                             <h3 className='text-xl font-semibold text-gray-900 mb-2'>Lightning Fast</h3>
-                            <p className='text-gray-600'>Get your prints ready in 30 minutes or delivered within hours.</p>
+                            <p className='text-gray-600'>Get your prints ready and delivered Same Day.</p>
                         </div>
 
                         <div className='bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100'>
