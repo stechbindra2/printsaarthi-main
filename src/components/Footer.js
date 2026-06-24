@@ -42,7 +42,7 @@ const Footer = () => {
                             />
                         </div>
                         <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                            Your trusted partner for professional printing services. We deliver quality prints fast and affordable, making printing hassle-free for students and businesses.
+                            Your trusted AI-powered print partner. Create editable designs, print on demand, and receive fast delivery made for students and SMEs.
                         </p>
                         
                         {/* Stats */}
@@ -69,14 +69,14 @@ const Footer = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                { name: 'Our Services'},
-                                { name: 'Pricing'},
-                                { name: 'About Us'},
-                                { name: 'Contact'},
-                                { name: 'FAQ', }
+                                { name: 'AI Studio', href: '/ai' },
+                                { name: 'Our Services', href: '/#services' },
+                                { name: 'Pricing', href: '/#pricing' },
+                                { name: 'About Us', href: '/#about' },
+                                { name: 'Contact', href: '/#contact' }
                             ].map((item, index) => (
                                 <li key={index}>
-                                    <Link href="https://wa.me/message/W22H3ZBHYRG4H1" className="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300 group">
+                                    <Link href={item.href} className="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300 group">
                                         <span className="mr-3 group-hover:scale-110 transition-transform duration-300">{item.icon}</span>
                                         <span className="group-hover:translate-x-1 transition-transform duration-300">{item.name}</span>
                                     </Link>
@@ -120,7 +120,7 @@ const Footer = () => {
                                 <div>
                                     <h4 className="font-semibold text-white mb-1">Email</h4>
                                     <Link href="mailto:PrintRocket@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
-                                        PrintRocket78@gmail.com
+                                        PrintRocket@gmail.com
                                     </Link>
                                 </div>
                             </div>
@@ -212,12 +212,12 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto px-8 md:px-16 py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         <p className="text-gray-400 text-sm">
-                            © 2025 PrintRocket. All rights reserved. Made with ❤️ for students.
+                            © 2026 PrintRocket. All rights reserved. Made with ❤️ for students.
                         </p>
                         <div className="flex items-center space-x-6 text-sm text-gray-400">
-                            <Link href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</Link>
-                            <Link href="#" className="hover:text-white transition-colors duration-300">Terms of Service</Link>
-                            <Link href="#" className="hover:text-white transition-colors duration-300">Cookie Policy</Link>
+                            <Link href="/privacy-policy" className="hover:text-white transition-colors duration-300">Privacy Policy</Link>
+                            <Link href="/terms-of-service" className="hover:text-white transition-colors duration-300">Terms of Service</Link>
+                            <Link href="/cookie-policy" className="hover:text-white transition-colors duration-300">Cookie Policy</Link>
                         </div>
                     </div>
                 </div>
