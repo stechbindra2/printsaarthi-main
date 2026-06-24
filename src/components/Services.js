@@ -1,14 +1,8 @@
 import React from 'react';
 import servicesData from '../../public/services';
 import Link from 'next/link';
-import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import HoriService from './HoriService';
-
-const inter = Inter({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-});
 
 const Services = () => {
     const serviceIcons = {
@@ -40,7 +34,7 @@ const Services = () => {
     };
 
     return (
-        <section className={`${inter.className} py-20 px-4 md:px-8 lg:px-16 w-full bg-gradient-to-b from-gray-50 to-white`}>
+        <section className="py-20 px-4 md:px-8 lg:px-16 w-full bg-gradient-to-b from-gray-50 to-white">
             <div className="max-w-7xl mx-auto">
                 {/* Browse by Category Section */}
                 <div className="text-center mb-16">

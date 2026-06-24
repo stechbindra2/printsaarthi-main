@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import ServiceList from './ServiceList';
 import logo from '../../public/logo_notBg.svg';
 import Link from 'next/link';
+import FileUpload from './FileUpload';
 
 const Hero = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -166,6 +167,11 @@ const Hero = () => {
                         <div className='absolute top-1/2 left-0 w-12 h-12 bg-green-200 rounded-full opacity-50 animate-pulse delay-500'></div>
                     </div>
                 </div>
+            </div>
+
+            {/* File Upload Section */}
+            <div className='px-4 md:px-16 pb-20'>
+                <FileUpload />
             </div>
 
             {/* Features highlight */}
