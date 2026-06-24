@@ -19,7 +19,9 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^15.2.4",
     "@tailwindcss/postcss": "^4",
+    "critters": "^0.0.25",
     "cross-env": "^7.0.3",
+    "eslint": "^10.5.0",
     "tailwindcss": "^4"
   }
 }
