@@ -54,11 +54,64 @@ const Services = () => {
                         Browse by Category
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Discover our comprehensive range of professional printing services tailored for students and businesses
+                        Discover our comprehensive range of professional printing services tailored for students and businesses.
                     </p>
                 </div>
                 
                 <HoriService/>
+
+                <div className="mt-16 rounded-[2rem] bg-[#f7f0ff] p-10 shadow-xl border border-[#e5d7ff]">
+                    <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-2 items-center">
+                        <div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#622AD1]/10 text-[#622AD1] font-semibold text-sm mb-4">
+                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 2a1 1 0 00-1 1v2.07a7.002 7.002 0 00-5.657 5.657H2a1 1 0 100 2h2.343a7.002 7.002 0 005.657 5.657V17a1 1 0 102 0v-2.07a7.002 7.002 0 005.657-5.657H18a1 1 0 100-2h-2.343A7.002 7.002 0 0011 5.07V3a1 1 0 00-1-1z" />
+                                </svg>
+                                AI-Powered Studio
+                            </span>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                                Create editable print assets with AI instantly
+                            </h2>
+                            <p className="text-lg text-gray-600 mb-6">
+                                Enter a prompt, choose your format, and get ready-to-print stationery, flyers, assignments, and business assets tailored for students and small businesses.
+                            </p>
+                            <div className="grid gap-4 sm:grid-cols-2">
+                                {[
+                                    'Text prompt to editable design',
+                                    'Fast on-demand print fulfillment',
+                                    'Stationery for students & SMEs',
+                                    'Doorstep delivery in hours'
+                                ].map((item, index) => (
+                                    <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-3xl border border-[#efe5ff] shadow-sm">
+                                        <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#622AD1] to-[#F89816] text-white flex items-center justify-center">
+                                            <span className="text-lg font-bold">{index + 1}</span>
+                                        </div>
+                                        <p className="text-gray-700 font-medium">{item}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="rounded-[2rem] overflow-hidden bg-gradient-to-br from-[#622AD1]/20 via-[#f9ede3]/80 to-[#F89816]/15 p-8">
+                            <div className="rounded-[1.75rem] bg-white p-8 shadow-xl border border-[#f3e2ff]">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">AI Works for:</h3>
+                                <ul className="space-y-4 text-gray-700">
+                                    <li className="flex items-start gap-3">
+                                        <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#622AD1] text-white">✓</span>
+                                        <span>Editable class notes, lecture summaries, and assignment layouts</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F89816] text-white">✓</span>
+                                        <span>Custom business cards, flyers, and stationery designed from your prompt</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#622AD1] text-white">✓</span>
+                                        <span>Fast print fulfillment and delivery solutions for campus and office needs</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Our Services Section */}
                 <div className="text-center mt-24 mb-16">
@@ -80,13 +133,13 @@ const Services = () => {
                     {servicesData.slice(0,5).map((service, index) => (
                         <div 
                             key={index} 
-                            className="group bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
+                            className="group bg-gradient-to-br from-white to-[#fdf8f0] border border-[#f1e5d0] rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
                         >
                             <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
                                 <div className="flex flex-col lg:flex-row p-8 items-start">
                                     <div className="flex-1 lg:pr-8 mb-6 lg:mb-0">
                                         <div className="flex items-center mb-6 group-hover:transform group-hover:translate-x-2 transition-transform duration-300">
-                                            <div className="w-16 h-16 bg-gradient-to-r from-[#622AD1] to-[#F89816] rounded-2xl flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform duration-300">
+                                            <div className="w-16 h-16 bg-gradient-to-br from-[#622AD1] to-[#F89816] rounded-2xl flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform duration-300">
                                                 {serviceIcons[index] || service.icon}
                                             </div>
                                             <div>
