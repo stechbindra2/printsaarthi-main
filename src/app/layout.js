@@ -17,15 +17,15 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "PrintRocket | #1 Online Printing Services for Students & Businesses | Fast & Affordable",
-  description: "PrintRocket is India's leading online printing service. Get instant quotes for documents, assignments, business cards, banners, posters, and custom prints. Free delivery, 24/7 service, and student-friendly prices. Order now!",
-  keywords: "printrocket, online printing, student printing, document printing, business cards, banners, posters, custom printing, fast printing, affordable printing, print shop, online print service",
+  title: "PrintRocket | AI-Powered Design, Printing, Stationery & Fast Delivery",
+  description: "PrintRocket creates editable print assets from text prompts, fulfills on-demand prints, and delivers stationery quickly to students and SMEs. AI-powered design, easy ordering, and fast delivery.",
+  keywords: "PrintRocket, AI printing, prompt design, stationery delivery, student printing, business printing, editable assets, fast delivery, online print studio",
   author: "PrintRocket Team",
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1",
   openGraph: {
-    title: "PrintRocket | #1 Online Printing Services",
-    description: "Get high-quality prints delivered fast. Students & businesses trust PrintRocket for all printing needs.",
+    title: "PrintRocket | AI-Powered Print & Design Studio",
+    description: "Generate editable designs from text, print on demand, and get fast delivery for students and small businesses with PrintRocket.",
     url: "https://printrocket.com",
     siteName: "PrintRocket",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "PrintRocket - Online Printing Services",
+        alt: "PrintRocket AI-powered design and print services",
       },
     ],
     locale: "en_US",
@@ -41,8 +41,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PrintRocket | #1 Online Printing Services",
-    description: "Get high-quality prints delivered fast. Students & businesses trust PrintRocket.",
+    title: "PrintRocket | AI Design, Print, Stationery, Delivery",
+    description: "AI-powered editable design, fast print fulfillment, and delivery for students and SMEs.",
     images: ["/twitter-image.jpg"],
   },
   alternates: {
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#f0ab2f" />
+        <meta name="theme-color" content="#622AD1" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "PrintRocket",
-              "description": "Professional online printing services for students and businesses",
+              "description": "AI-powered design, printing, stationery, and delivery services for students and SMEs.",
               "url": "https://printrocket.com",
               "telephone": "+91-9211202801",
               "email": "PrintRocket78@gmail.com",
@@ -94,11 +94,11 @@ export default function RootLayout({ children }) {
                 "geoRadius": "50000"
               },
               "services": [
-                "Document Printing",
-                "Business Cards",
-                "Banners",
-                "Posters",
-                "Custom Printing"
+                "AI design assets",
+                "Editable stationery templates",
+                "Document and poster printing",
+                "Business cards and flyers",
+                "Fast doorstep delivery"
               ]
             })
           }}
