@@ -60,14 +60,12 @@ const HoriService = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 320px"
                   quality={85}
                 />
-                
+
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                
-                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1f113f]/80 via-[#622AD1]/25 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#622AD1]/80 to-[#F89816]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              
+
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="bg-gradient-to-br from-white/95 to-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20">
