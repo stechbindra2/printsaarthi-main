@@ -1,6 +1,7 @@
+'use client'
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import img from '../../public/img.png';
+// use public/ assets via absolute path (do not import from public/)
 import ServiceList from './ServiceList';
 import logo from '../../public/logo_notBg.svg';
 import Link from 'next/link';
@@ -36,7 +37,7 @@ const Hero = () => {
   return (
         <div className='relative min-h-screen w-full bg-gradient-to-br from-purple-50 via-white to-orange-50 overflow-hidden'>
             {/* Navigation */}
-            <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+            <nav className={`fixed inset-x-4 top-4 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-[2rem]' : 'bg-transparent'}`}>
                 <div className='flex justify-between items-center w-full h-20 px-4 md:px-16'>
                     <div className='logo-container flex items-center'>
                         <Image 
@@ -50,18 +51,14 @@ const Hero = () => {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-6">
-                        <button 
-                            onMouseEnter={handleHover}
-                            className='flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 rounded-lg hover:bg-blue-50'
-                        >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
-                            <span>Services</span>
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
+                        <Link href='/ai'>
+                            <button className='flex items-center space-x-2 px-4 py-2 text-[#4f21aa] bg-[#f8f2ff] hover:text-[#622AD1] font-medium transition-all duration-300 rounded-lg shadow-sm border border-[#e7d7fe]'>
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>AI Studio</span>
+                            </button>
+                        </Link>
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
                             <button className='flex items-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c]'>
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -118,7 +115,7 @@ const Hero = () => {
                         </div>
 
                         <p className='text-xl text-gray-600 max-w-2xl leading-relaxed'>
-                            PrintRocket delivers professional printing services to your doorstep. From assignments to business cards, banners to custom prints—we've got you covered with quality, speed, and affordability.
+                            PrintRocket is an AI-powered design, printing, stationery, and delivery platform. We generate editable assets from text prompts, fulfill on-demand printing, and deliver materials quickly to students and SMEs.
                         </p>
 
                         <div className='flex flex-col sm:flex-row gap-4'>
@@ -127,7 +124,7 @@ const Hero = () => {
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd"/>
                                     </svg>
-                                    <span>Start Printing</span>
+                                    <span>Start AI Print</span>
                                 </button>
                             </Link>
 
@@ -137,14 +134,14 @@ const Hero = () => {
                         <div className='flex items-center space-x-8 pt-8'>
                             <div className='text-center'>
                                 <div className='text-2xl font-bold text-gray-900'>1000+</div>
-                                <div className='text-sm text-gray-600'>Happy Students</div>
+                                <div className='text-sm text-gray-600'>AI Templates Created</div>
                             </div>
                             <div className='text-center'>
                                 <div className='text-2xl font-bold text-gray-900'>24/7</div>
                                 <div className='text-sm text-gray-600'>Service</div>
                             </div>
                             <div className='text-center'>
-                                <div className='text-2xl font-bold text-gray-900'>Same Day</div>
+                                <div className='text-2xl font-bold text-gray-900'>30min</div>
                                 <div className='text-sm text-gray-600'>Delivery</div>
                             </div>
                         </div>
@@ -155,7 +152,7 @@ const Hero = () => {
                         <div className='relative z-10'>
                             <Image 
                                 className='w-full h-auto animate-float' 
-                                src={img} 
+                                src={'/img.png'} 
                                 alt='PrintRocket printing services illustration'
                                 priority
                                 width={800}
@@ -176,33 +173,33 @@ const Hero = () => {
                 <div className='max-w-7xl mx-auto'>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                         <div className='bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100'>
-                            <div className='w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4'>
-                                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className='w-12 h-12 bg-[#622AD1]/10 rounded-xl flex items-center justify-center mb-4'>
+                                <svg className="w-6 h-6 text-[#622AD1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                 </svg>
                             </div>
-                            <h3 className='text-xl font-semibold text-gray-900 mb-2'>Lightning Fast</h3>
-                            <p className='text-gray-600'>Get your prints ready and delivered Same Day.</p>
+                            <h3 className='text-xl font-semibold text-gray-900 mb-2'>Instant AI Designs</h3>
+                            <p className='text-gray-600'>Generate editable stationery and print-ready layouts from simple prompts.</p>
                         </div>
 
                         <div className='bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100'>
-                            <div className='w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4'>
-                                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className='w-12 h-12 bg-[#F89816]/10 rounded-xl flex items-center justify-center mb-4'>
+                                <svg className="w-6 h-6 text-[#F89816]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
                                 </svg>
                             </div>
-                            <h3 className='text-xl font-semibold text-gray-900 mb-2'>Student Friendly</h3>
-                            <p className='text-gray-600'>Affordable pricing designed specifically for students and small businesses.</p>
+                            <h3 className='text-xl font-semibold text-gray-900 mb-2'>Student-Ready Workflows</h3>
+                            <p className='text-gray-600'>Smart AI templates, fast proofing, and delivery built for students and SMEs.</p>
                         </div>
 
                         <div className='bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100'>
-                            <div className='w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4'>
-                                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className='w-12 h-12 bg-[#622AD1]/10 rounded-xl flex items-center justify-center mb-4'>
+                                <svg className="w-6 h-6 text-[#622AD1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
-                            <h3 className='text-xl font-semibold text-gray-900 mb-2'>Quality Guaranteed</h3>
-                            <p className='text-gray-600'>Professional-grade printing with 100% satisfaction guarantee.</p>
+                            <h3 className='text-xl font-semibold text-gray-900 mb-2'>AI Quality Workflow</h3>
+                            <p className='text-gray-600'>From editable mockups to final delivery, every step is optimized for speed and quality.</p>
                         </div>
                     </div>
                 </div>
