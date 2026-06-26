@@ -37,7 +37,7 @@ const Hero = () => {
   return (
         <div className='relative min-h-screen w-full bg-gradient-to-br from-purple-50 via-white to-orange-50 overflow-hidden'>
             {/* Navigation */}
-            <nav className={`fixed left-4 right-4 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-[2rem]' : 'bg-transparent'} mt-20`}>
+            <nav className={`fixed inset-x-4 top-16 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-[2rem]' : 'bg-transparent'}`}>
                 <div className='flex justify-between items-center w-full h-20 px-4 md:px-16'>
                     <div className='logo-container flex items-center'>
                         <Image 
@@ -87,7 +87,7 @@ const Hero = () => {
             </nav>
 
             {/* Hero Content */}
-            <div className='pt-40 pb-20 px-4 md:px-16'>
+            <div className='pt-48 pb-20 px-4 md:px-16'>
                 <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
                     {/* Left Content */}
                     <div className='space-y-8'>
