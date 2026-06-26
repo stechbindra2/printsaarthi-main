@@ -87,7 +87,7 @@ const Hero = () => {
             </nav>
 
             {/* Hero Content */}
-            <div className='pt-48 pb-20 px-4 md:px-16'>
+            <div className='pt-30 pb-20 px-4 md:px-16'>
                 <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
                     {/* Left Content */}
                     <div className='space-y-8'>
