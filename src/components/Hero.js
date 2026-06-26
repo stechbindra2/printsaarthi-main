@@ -52,7 +52,7 @@ const Hero = () => {
 
                     <div className="hidden md:flex items-center space-x-6">
                         <Link href='/ai'>
-                            <button className='flex items-center space-x-2 px-4 py-2 text-[#4f21aa] bg-[#f8f2ff] hover:text-[#622AD1] font-medium transition-all duration-300 rounded-lg shadow-sm borde[...]
+                            <button className='flex items-center space-x-2 px-4 py-2 text-[#4f21aa] bg-[#f8f2ff] hover:text-[#622AD1] font-medium transition-all duration-300 rounded-lg shadow-sm border border-purple-200'>
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -60,9 +60,9 @@ const Hero = () => {
                             </button>
                         </Link>
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                            <button className='flex items-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#F89816] hover:to-[ff[...]
+                            <button className='flex items-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c] transition-all duration-300'>
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1[...]
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h4a1 1 0 001-1v-6a1 1 0 00-1-1h-4z" />
                                 </svg>
                                 <span>Order Now</span>
                             </button>
@@ -72,7 +72,7 @@ const Hero = () => {
                     {/* Mobile menu */}
                     <div className="md:hidden">
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                            <button className='bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold'>
+                            <button className='bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors'>
                                 Order
                             </button>
                         </Link>
@@ -115,19 +115,18 @@ const Hero = () => {
                         </div>
 
                         <p className='text-xl text-gray-600 max-w-2xl leading-relaxed'>
-                            PrintRocket is an AI-powered design, printing, stationery, and delivery platform. We generate editable assets from text prompts, fulfill on-demand printing, and deliver mat[...]
+                            PrintRocket is an AI-powered design, printing, stationery, and delivery platform. We generate editable assets from text prompts, fulfill on-demand printing, and deliver materials quickly to students and SMEs.
                         </p>
 
                         <div className='flex flex-col sm:flex-row gap-4'>
                             <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                                <button className='flex items-center justify-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-8 py-4 rounded-xl font-semibold hover:from-[#F8[...]
+                                <button className='flex items-center justify-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-8 py-4 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c] transition-all duration-300'>
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.41[...]
+                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3z" clipRule="evenodd" />
                                     </svg>
                                     <span>Start AI Print</span>
                                 </button>
                             </Link>
-
                         </div>
 
                         {/* Trust indicators */}
@@ -185,7 +184,7 @@ const Hero = () => {
                         <div className='bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100'>
                             <div className='w-12 h-12 bg-[#F89816]/10 rounded-xl flex items-center justify-center mb-4'>
                                 <svg className="w-6 h-6 text-[#F89816]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V[...]
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7a4 4 0 00-4 4v4a4 4 0 008 0v-4a4 4 0 00-4-4z" />
                                 </svg>
                             </div>
                             <h3 className='text-xl font-semibold text-gray-900 mb-2'>Student-Ready Workflows</h3>
