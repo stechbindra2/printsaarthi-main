@@ -119,8 +119,8 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white mb-1">Email</h4>
-                                    <Link href="mailto:PrintRocket@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
-                                        printrocket78@gmail.com
+                                    <Link href="mailto:support@printrocket.in" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
+                                        support@printrocket.in
                                     </Link>
                                 </div>
                             </div>
@@ -131,17 +131,7 @@ const Footer = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                     </svg>
                                 </div>
-                                <div>
-                                    <h4 className="font-semibold text-white mb-1">Phone</h4>
-                                    <div className="space-y-1">
-                                        <Link href="tel:+919811123564" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
-                                            +91 9211202801
-                                        </Link>
-                                        <Link href="tel:+918887760911" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
-                                            +91 8887760911
-                                        </Link>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -167,7 +157,7 @@ const Footer = () => {
                                     </svg>
                                 </Link>
                                 <Link 
-                                    href="#" 
+                                    href="https://www.instagram.com/printrocketofficial/" 
                                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-110 group"
                                     aria-label="Instagram"
                                 >
@@ -180,7 +170,7 @@ const Footer = () => {
                                     </svg>
                                 </Link>
                                 <Link 
-                                    href="#" 
+                                    href="https://www.facebook.com/profile.php?id=61580360678461" 
                                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-110 group"
                                     aria-label="Facebook"
                                 >
