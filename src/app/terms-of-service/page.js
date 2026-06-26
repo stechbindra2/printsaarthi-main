@@ -45,7 +45,7 @@ const TermsOfServicePage = () => {
           <section>
             <h2 className="text-2xl font-semibold text-slate-900 mb-3">Contact Us</h2>
             <p className="text-slate-600 leading-7">
-              Questions about these terms can be sent to <a href="mailto:PrintRocket@gmail.com" className="text-[#622AD1] hover:underline">PrintRocket@gmail.com</a>.
+              Questions about these terms can be sent to <a href="mailto:support@printrocket.in" className="text-[#622AD1] hover:underline">support@printrocket.in</a>.
             </p>
           </section>
         </div>
