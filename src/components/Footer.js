@@ -69,11 +69,7 @@ const Footer = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                { name: 'AI Studio', href: '/ai' },
-                                { name: 'Our Services', href: '/#services' },
-                                { name: 'Pricing', href: '/#pricing' },
-                                { name: 'About Us', href: '/#about' },
-                                { name: 'Contact', href: '/#contact' }
+                                { name: 'AI Studio', href: '/ai' }
                             ].map((item, index) => (
                                 <li key={index}>
                                     <Link href={item.href} className="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300 group">
