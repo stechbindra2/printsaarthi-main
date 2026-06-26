@@ -29,7 +29,7 @@ const AlphaMarquee = () => {
 
                             <Link href="https://delivery1-printrocket.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                                 <span className="text-white font-semibold text-sm md:text-base hover:text-yellow-200 transition-colors duration-300 cursor-pointer whitespace-nowrap">
-                                    🚀 Try our Alpha: delivery1-printrocket.vercel.app
+                                    🚀 Try our Alpha: Testing
                                 </span>
                             </Link>
 
