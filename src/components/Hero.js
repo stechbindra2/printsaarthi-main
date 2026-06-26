@@ -37,7 +37,7 @@ const Hero = () => {
   return (
         <div className='relative min-h-screen w-full bg-gradient-to-br from-purple-50 via-white to-orange-50 overflow-hidden'>
             {/* Navigation */}
-            <nav className={`fixed inset-x-4 top-4 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-[2rem]' : 'bg-transparent'}`}>
+            <nav className={`fixed left-4 right-4 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-[2rem]' : 'bg-transparent'} mt-20`}>
                 <div className='flex justify-between items-center w-full h-20 px-4 md:px-16'>
                     <div className='logo-container flex items-center'>
                         <Image 
@@ -52,7 +52,7 @@ const Hero = () => {
 
                     <div className="hidden md:flex items-center space-x-6">
                         <Link href='/ai'>
-                            <button className='flex items-center space-x-2 px-4 py-2 text-[#4f21aa] bg-[#f8f2ff] hover:text-[#622AD1] font-medium transition-all duration-300 rounded-lg shadow-sm border border-[#e7d7fe]'>
+                            <button className='flex items-center space-x-2 px-4 py-2 text-[#4f21aa] bg-[#f8f2ff] hover:text-[#622AD1] font-medium transition-all duration-300 rounded-lg shadow-sm borde[...]
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -60,9 +60,9 @@ const Hero = () => {
                             </button>
                         </Link>
                         <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                            <button className='flex items-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c]'>
+                            <button className='flex items-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#F89816] hover:to-[ff[...]
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1[...]
                                 </svg>
                                 <span>Order Now</span>
                             </button>
@@ -87,7 +87,7 @@ const Hero = () => {
             </nav>
 
             {/* Hero Content */}
-            <div className='pt-32 pb-20 px-4 md:px-16'>
+            <div className='pt-40 pb-20 px-4 md:px-16'>
                 <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
                     {/* Left Content */}
                     <div className='space-y-8'>
@@ -115,14 +115,14 @@ const Hero = () => {
                         </div>
 
                         <p className='text-xl text-gray-600 max-w-2xl leading-relaxed'>
-                            PrintRocket is an AI-powered design, printing, stationery, and delivery platform. We generate editable assets from text prompts, fulfill on-demand printing, and deliver materials quickly to students and SMEs.
+                            PrintRocket is an AI-powered design, printing, stationery, and delivery platform. We generate editable assets from text prompts, fulfill on-demand printing, and deliver mat[...]
                         </p>
 
                         <div className='flex flex-col sm:flex-row gap-4'>
                             <Link href='https://wa.me/message/W22H3ZBHYRG4H1'>
-                                <button className='flex items-center justify-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-8 py-4 rounded-xl font-semibold hover:from-[#F89816] hover:to-[#ffad3c] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl text-lg'>
+                                <button className='flex items-center justify-center space-x-2 bg-gradient-to-r from-[#622AD1] to-[#7c4ddb] text-white px-8 py-4 rounded-xl font-semibold hover:from-[#F8[...]
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd"/>
+                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.41[...]
                                     </svg>
                                     <span>Start AI Print</span>
                                 </button>
@@ -185,7 +185,7 @@ const Hero = () => {
                         <div className='bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100'>
                             <div className='w-12 h-12 bg-[#F89816]/10 rounded-xl flex items-center justify-center mb-4'>
                                 <svg className="w-6 h-6 text-[#F89816]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V[...]
                                 </svg>
                             </div>
                             <h3 className='text-xl font-semibold text-gray-900 mb-2'>Student-Ready Workflows</h3>
